@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp" lang="en"  ng-controller="GalleryListCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title ng-bind-template="{{query}}"></title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+
+
+  </head>
+  <body onload="zegarek()" >
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" ariaexpanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">
+        <div id="logo">
+          <img src="img/logo.png" alt="tytuł obrazka">
+        </div>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav text-right navbar-right">
+        <li class="active "><a href="#main-page" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> UFC</a></li>
+        <li><a href="#main-page" class="btn btn-primary "><span class="glyphicon glyphicon-header" ></span> Historia</a></li>
+        <li><a href="#zdjecia" class="btn btn-primary "><span class="glyphicon glyphicon-camera" ></span> Największe gale UFC</a></li>
+        <li><a href="#tab" class="btn btn-primary"><span class="glyphicon glyphicon-list" ></span> Mistrzowie ufc</a></li>
+        <li><a href="#pwu" class="btn btn-primary"><span class="glyphicon glyphicon-flag" ></span> Polacy w UFC</a></li>
+        <li><a href="#main-page2" class="btn btn-primary"><span class="glyphicon glyphicon-list-alt" ></span> Formularz </a></li>
+        <li><a href="#js" class="btn btn-primary"><span class="glyphicon glyphicon-calendar" ></span> JS Zegar </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <header>
+      <div class="container">
+        <div id="carouselID" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselID" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselID" data-slide-to="1"></li>
+            <li data-target="#carouselID" data-slide-to="2"></li>
+            <li data-target="#carouselID" data-slide-to="3"></li>
+            <li data-target="#carouselID" data-slide-to="4"></li>
+            <li data-target="#carouselID" data-slide-to="5"></li>
+            <li data-target="#carouselID" data-slide-to="6"></li>
+          </ol>
+
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/sm.jpg" alt="Stipe Miocic">
+            <div class="carousel-caption">Stipe Miocic</div>
+          </div>
+
+          <div class="item">
+            <img src="img/jj.jpg" alt="Jon Jones">
+            <div class="carousel-caption">Jon Jones</div>
+          </div>
+
+          <div class="item">
+            <img src="img/ia.jpg" alt="Israel Adesanya">
+            <div class="carousel-caption">Israel Adesanya</div>
+          </div>
+
+          <div class="item">
+            <img src="img/ku.jpg" alt="Kamaru Usman">
+            <div class="carousel-caption">Kamaru Usman</div>
+          </div>
+
+          <div class="item">
+            <img src="img/kn.jpg" alt="Chabib Nurmagomiedow">
+            <div class="carousel-caption">Chabib Nurmagomiedow</div>
+          </div>
+
+          <div class="item">
+            <img src="img/av.jpg" alt="Alexander Volkanovski">
+            <div class="carousel-caption">Alexander Volkanovski</div>
+          </div>
+
+          <div class="item">
+            <img src="img/hc.jpg" alt="Henry Cejudo">
+            <div class="carousel-caption">Henry Cejudo</div>
+          </div>
+
+          <a class="left carousel-control" href="#carouselID" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Poprzedni</span>
+          </a>
+          <a class="right carousel-control" href="#carouselID" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Nastepny</span>
+          </a>
+
+      </div>
+      </div>
+
+    </div>
+    </header>
+
+    <section id="main-page" class="jumbotron">
+      <div class="container">
+        <h1><span ></span>Ultimate Fighting Championship</h1>
+        <p style="color:black">
+       UFC – amerykańska organizacja mieszanych sztuk walki (MMA)
+         założona w 1993 roku. Pojedynki odbywają się w ośmiokątnym ringu otoczonym siatką, zwanym oktagonem.
+        </p>
+
+        <h3 ><span ></span>Historia</h2>
+        <p style="color:black">
+          Pierwsze zawody Ultimate Fighting Championship zostały zorganizowane przez Arta Davie i Roriona Gracie. UFC 1 odbyło się 12 listopada 1993 roku w Denver w stanie Kolorado. Wzięli w nich udział: sumita, bokser, mistrz świata w savate (będący też mistrzem Europy w kyokushin), dwóch kick-boxerów, praktyk kempo, mistrz Pancrase oraz zawodnik brazylijskiego jiu-jitsu Royce Gracie. Gracie wygrał cały turniej, a także późniejsze UFC 2 i UFC 4 (walczył i w UFC 3, wygrał pierwszą walkę, lecz wycofał się ze względu na udar cieplny). Początkowe edycje były zbliżone pod względem minimum reguł do turniejów vale tudo. Popularność tychże walk gwałtownie się zwiększała, co zwróciło uwagę amerykańskich władz. Wielkim przeciwnikiem UFC w tamtych latach był senator John McCain, który jawnie sprzeciwiał się organizowaniu gal na terenie USA. Zapoczątkował nawet kampanię przeciw UFC, rozsyłał listy do gubernatorów stanów z prośbą zakazania organizowania gal UFC oraz podobnych imprez. W odpowiedzi na krytykę UFC zaczęto wprowadzać szereg ograniczeń i modyfikacji, m.in.: </br>
+</br>
+          * sędzia otrzymał prawo zatrzymywania walki (od UFC 3)</br>
+          * wprowadzono kategorie wagowe (UFC 12)</br>
+          * obowiązkowo zawodnicy musieli walczyć w rękawicach ochronnych oraz zabroniono kopania w głowę leżącego przeciwnika (UFC 14)</br>
+          * zabroniono uderzeń głową i ciosów w krocze (UFC 15)</br>
+          * wprowadzono 5-minutowe rundy (UFC 21)</br>
+</br>
+          W 2001 roku organizacja została zakupiona przez spółkę Zuffa, należącą do braci Fertita, przedsiębiorców z branży hazardowej z Las Vegas za sumę 2 milionów USD. Prezydentem UFC został Dana White. Mimo że UFC była dominującą organizacją na terenie Ameryki, globalnie pozostawała ówcześnie w cieniu japońskiej PRIDE Fighting Championships, która dysponowała znacznymi środkami finansowymi i większość najlepszych zawodników walczyła w jej szeregach. W roku 2006 sytuacja zaczęła się odwracać. PRIDE straciła kontrakt ze stacją telewizyjną Fuji TV, głównie w wyniku pomówień dotyczących związków z Jakuzą, natomiast UFC rozwinęła się dzięki kontraktowi z telewizją Spike TV oraz popularności show The Ultimate Fighter. Stopniowo zaczęła ściągać do siebie najlepszych zawodników z innych organizacji, w tym także z PRIDE FC.</br>
+</br>
+          Ostatnim krokiem w wyeliminowaniu konkurencji było kupienie 27 marca 2007 roku PRIDE przez Zuffę. Wkrótce potem PRIDE FC przestało funkcjonować.</br>
+</br>
+          28 października 2010 roku prezydent UFC Dana White ogłosił, że federacja World Extreme Cagefighting zostanie wchłonięta przez UFC. WEC od 2006 roku była siostrzaną organizacją UFC, również należącą do spółki braci Fertitta - Zuffa, LLC. Istniejąca od 2001 roku organizacja, począwszy od 2006 roku i zmian wprowadzonych przez nowych właścicieli ograniczyła się do organizowania walk w lżejszych kategoriach wagowych (lekkiej, piórkowej i koguciej). Ostatnia gala WEC odbyła się 16 grudnia 2010 roku. Proces połączenia obu organizacji zakończył się na początku 2011 roku. Mistrzowie WEC w wadze piórkowej (Jose Aldo) i koguciej (Dominick Cruz) stali się automatycznie mistrzami UFC.</br>
+</br>
+          12 marca 2011 roku Dana White ujawnił, że Zuffa kupiła udziały głównego rywala UFC na amerykańskim rynku - Strikeforce. White ogłosił, że Strikeforce będzie działać nadal jako niezależna spółka, a Scott Coker będzie dalej pełnić rolę jej prezydenta. Ostatnia gala tej organizacji odbyła się 12 stycznia 2013 roku[10], po czym jej zawodnicy zostali włączeni do UFC, a mistrzyni Strikeforce w wadze koguciej, Ronda Rousey została mianowana mistrzynią UFC.</br>
+</br>
+          W sierpniu 2011 roku UFC podpisała 7-letni kontrakt z czołową amerykańską siecią telewizyjną, Fox.</br>
+</br>
+          23 lutego 2013 na gali UFC 157 miała miejsce pierwsza w historii organizacji walka kobiet. W walce o mistrzostwo w wadze koguciej zmierzyły się Ronda Rousey i Liz Carmouche.</br>
+</br>
+          27 grudnia 2013 została uruchomiona internetowa platforma UFC Fight Pass umożliwiająca oglądanie na żywo (po uiszczeniu opłaty) poszczególnych gal (m.in. z cyklu Fight Night) oraz udostępniająca wszystkie archiwalne gale m.in. UFC, WEC, PRIDE oraz Strikeforce. W lipcu 2015 na UFC Fan Expo poinformowano o poszerzeniu oferty o transmisję i bibliotekę m.in. gal King of the Cage oraz Pancrase.</br>
+</br>
+          Na początku czerwca 2014 roku nawiązano współpracę z żeńską organizacją MMA, Invicta Fighting Championships. Umowa obejmuje transmisję gal na Fight Passie oraz możliwość transferu zawodniczek z Invicta do UFC.</br>
+</br>
+          2 grudnia 2014 roku, UFC i Reebok zorganizowały wspólną konferencję prasową, podczas której ogłoszono współpracę federacji ze światowym producentem odzieży sportowej na najbliższych sześć lat i w związku z tym porozumieniem wprowadzono ujednolicenie strojów zawodników począwszy od lipca 2015. Pierwszą imprezą, podczas której każdy z zawodników musiał być ubrany w odzież firmy Reebok była gala z numerkiem 189 w Las Vegas, gdzie w walce wieczoru Conor McGregor zdobył tymczasowy pas mistrza wagi piórkowej, pokonując przez techniczny nokaut Chada Mendesa. Wraz z nową umową wycofano możliwość, którą miał do tej pory każdy zawodnik, mianowicie umieszczenie logotypów własnych, indywidualnych sponsorów na spodenkach, co było przyczyną dużych kontrowersji, ponieważ zwłaszcza w przypadku zawodników mających za sobą po kilka walk pod szyldem UFC pieniądze od Reeboka okazały się być kwotą znacznie mniejszą, niż ta którą zawodnik otrzymywał od swoich indywidualnych sponsorów.</br>
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="zdjecia" class="jumpotron">
+      <div class="container" ng-controller="GalleryListCtrl">
+        <div class="row content text-center">
+        <h1>Największe gale UFC</h1>
+          <p>{{galleries.sekcja}}</p>
+
+          <div class="row">
+        <div class="col-sm-6">
+          <label>Wyszukiwarka:</label>
+            <p><input type="text" ng-model="query" class="form-control"><p>
+            <p ng-if="query"><b>Wyniki wyszukiwania dla:</b> {{query}}</p>
+            <p ng-if="!query">Ilość elementów: {{galleries.length}}</p>
+        </div>
+
+        <div class="col-sm-6">
+          <label>Sortuj:</label>
+          <select ng-model="orderProp" class="form-control" ng-options="sort as sort.label for sort in sortList">
+            <option value="title">Alfabetycznie</option>
+            <option value="when">Chronologicznie</option>
+            <option value="-when">Od Najnowszych</option>
+          </select>
+          <p></p>
+          <p ng-if="orderProp">Galerie ułożone: {{orderProp.label}}</p>
+        </div>
+      </div>
+
+        <br>
+        <div class="col-sm-4 text-center" ng-repeat="gallery in galleries | filter: query | orderBy: orderProp.value">
+          <img src="{{gallery.thumbnailUrl}}" class="img-rounded center-block img-responsie" alt="" height=200 width=200>
+          <h3>{{gallery.title}}</h3>
+          <p><strong>Kiedy: </strong>{{gallery.when | date : 'longDate' : '+0100'}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab" class="jumbotron">
+    <div class="container">
+      <h1>Mistrzowie ufc</h1>
+    <div class="col-sm-2 sidenav"></div>
+    <div class="col-sm-8 text-left">
+      <table class="table table-bordered" style="color:black" >
+            <tr class="info">
+                <td colspan="2">Osoba</td>
+                <td rowspan="2">Waga</td>
+            </tr>
+            <tr class="info" >
+                <td>Imie</td>
+                <td>Nazwisko</td>
+            </tr>
+            <tr class="danger">
+                <td>Stipe</td>
+                <td>Miocic</td>
+                <td>Ciężka</td>
+            </tr>
+            <tr class="warning">
+                <td>Jon</td>
+                <td>Jones</td>
+                <td>Półciężka</td>
+            </tr>
+            <tr class="danger">
+                <td>Israel</td>
+                <td>Adesanya</td>
+                <td>Średnia</td>
+            </tr>
+            <tr class="warning">
+                <td>Kamaru</td>
+                <td>Usman</td>
+                <td>Półśrednia</td>
+            </tr>
+            <tr class="danger">
+                <td>Chabib</td>
+                <td>Nurmagomiedow</td>
+                <td>Lekka</td>
+            </tr>
+            <tr class="warning">
+                <td>Alexander</td>
+                <td>Volkanovski</td>
+                <td>Piórkowa</td>
+            </tr>
+            <tr class="danger">
+                <td>Henry</td>
+                <td>Cejudo</td>
+                <td>Koguciat</td>
+            </tr>
+            <tr class="warning">
+                <td>Henry</td>
+                <td>Cejudo</td>
+                <td>Musza</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-sm-2 sidenav"></div>
+  </div>
+</section>
+
+    <section id="pwu" >
+      <div class="container">
+        <h2 class="text-danger">Polacy w UFC</h2>
+        <p>
+          Jan Błachowicz − polski zawodnik mieszanych sztuk walki wagi półciężkiej,
+          także utytułowany grappler i zawodnik boksu tajskiego. W latach 2011−2014
+          międzynarodowy mistrz Konfrontacji Sztuk Walki w wadze półciężkiej.
+          Od 2014 roku związany z Ultimate Fighting Championship.</br>
+</br>
+          Joanna Jędrzejczyk – polska zawodniczka boksu,
+           muay thai, kick-boxingu i mieszanych sztuk walki (MMA). Trzykrotna zawodowa mistrzyni świata,
+            dwukrotna mistrzyni Europy oraz czterokrotna amatorska mistrzyni świata,
+            trzykrotna mistrzyni Europy i pięciokrotna mistrzyni Polski w boksie tajskim,
+            wicemistrzyni Polski w amatorskim boksie z 2011. Pierwsza Polka w organizacji MMA –
+            Ultimate Fighting Championship oraz mistrzyni tejże organizacji w wadze słomkowej
+            (do 52 kg) w latach 2015–2017.</br>
+</br>
+            Krzysztof Jotko – polski zawodnik MMA występujący w
+             wadze średniej. Aktualnie związany z UFC. Posiadacz brązowego pasa w
+             brazylijskim jiu-jitsu.</br>
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <img src="img/jb.jpg" class="img-circle center-block img-responsie" alt="Kwadrat" height=200 width=200>
+          <h3 class="text-danger" >Jan Błachowicz</h3>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="img/jj1.jpg" class="img-circle center-block img-responsie" alt="Kwadrat" height=200 width=200>
+          <h3 class="text-danger ">Joanna Jędrzejczyk</h3>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="img/kj.jpg" class="img-circle center-block img-responsie" alt="Kwadrat" height=200 width=200>
+          <h3 class="text-danger">Krzysztof Jotko</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="main-page2" class="jumbotron" >
+      <div class="container">
+        <form action="index.html#kontakt" method="post" onsubmit="return checkForm();" >
+          <fieldset>
+            <legend><h1 class="text-danger">Formularz kontaktowy</h1></legend>
+            <div class="form-group" id="error1">
+                    <p id="errorName" class="hide">Podanie imienia jest wymagane!</p>
+                    <label for="contactName" style="color:black">Imię</label>
+                    <input type="text" class="form-control" id="contactName" onblur="return checkFormName();"/>
+                  </div>
+
+                  <div class="form-group" id="error2">
+                    <p id="errorLastName" class="hide">Podanie nazwiska jest wymagane!</p>
+                    <label for="contactLastName" style="color:black">Nazwisko</label>
+                    <input type="text" class="form-control" id="contactLastName" onblur="return checkFormLastName();"/>
+                  </div>
+
+                  <div class="form-group" id="error3">
+                    <p id="errorEmail" class="hide">Podanie emaila jest wymagane!</p>
+                    <label for="contactEmail" style="color:black">Email</label>
+                    <input type="text" class="form-control" id="contactEmail" onblur="return checkFormEmail();"/>
+                  </div>
+
+                  <div class="form-group" id="error4">
+                    <p id="errorInfo" class="hide" >Podanie informacji jest wymagane!</p>
+                    <p id="errorInfoLength" class="hide">Długość informacji musi być mniejsza niż 250 znaków!</p>
+                    <label for="contactInfo" style="color:black">Informacje</label>
+                    <textarea class="form-control" id="contactInfo" onblur="return checkFormInformation();" rows="4"></textarea>
+                  </div>
+
+                  <input type="submit" class="btn btn-success pull-right" value="Wyślij"/>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="container text-center">
+        <div class="container">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+             Polityka prywatności
+          </button>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" arialabel="Close"><span ariahidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p style="color:black">
+            Uwaga!!!</br>
+            Uwaga!!!</br>
+            Uwaga!!!</br>
+          </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="js" class="container text-center">
+      <div class="container">
+
+        <script>
+        function zegarek()
+        {
+            var data = new Date();
+            var godzina = data.getHours();
+            var minuta = data.getMinutes();
+            var sekunda = data.getSeconds();
+            var dzien = data.getDate();
+            var dzienN = data.getDay();
+            var miesiac = data.getMonth();
+            var rok = data.getFullYear();
+            if (minuta < 10) minuta = "0" + minuta;
+            if (sekunda < 10) sekunda = "0" + sekunda;
+            var dni = new Array("Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota");
+            var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+            var pokazDate =   dni[dzienN] + ', ' + dzien + ' ' + miesiace[miesiac] + ' ' + rok + " r.<br />Godz. " + godzina + ':' + minuta ;
+            document.getElementById("zegar").innerHTML = pokazDate;
+            setTimeout(zegarek, 1000);
+        }
+    </script>
+
+    <div id="zegar"></div>
+
+      </div>
+    </section>
+
+  </body>
+</html>

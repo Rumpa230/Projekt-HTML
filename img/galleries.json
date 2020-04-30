@@ -1,0 +1,27 @@
+$scope.galleries=
+[
+    { "title":"Rzym",
+    "when":"2011-07-22",
+    "thumbnailUrl":"img/rzym.jpg"
+    },
+    { "title":"Chiny",
+    "when":"2012-08-11",
+    "thumbnailUrl":"img/chiny.jpg"
+    },
+    { "title":"Kambodża",
+    "when":"2013-06-25",
+    "thumbnailUrl":"img/kambodża.jpg"
+    },
+    { "title":"Maroko",
+    "when":"2014-07-29",
+    "thumbnailUrl":"img/maroko.jpg"
+    },
+    { "title":"Tajlandia",
+    "when":"2015-06-30",
+    "thumbnailUrl":"img/tajlandia.jpg"
+    },
+    { "title":"Turcja",
+    "when":"2016-07-06",
+    "thumbnailUrl":"img/turcja.jpg",
+    }
+];
